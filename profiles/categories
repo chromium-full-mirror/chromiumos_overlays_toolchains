@@ -1,0 +1,9 @@
+# All toolchains we know about.
+# NB: The vendor field must be "cros".
+cross-aarch64-cros-linux-gnu
+cross-arm-none-eabi
+cross-armv7a-cros-linux-gnueabihf
+cross-armv7m-cros-eabi
+cross-i686-cros-linux-gnu
+cross-x86_64-cros-linux-gnu
+cross-x86_64-cros-linux-gnux32
