@@ -11,6 +11,6 @@ RDEPEND=dev-libs/mpfr:0= dev-libs/gmp:= >=sys-libs/ncurses-5.2-r2 >=sys-libs/rea
 REQUIRED_USE=python? ( ^^ ( python_single_target_python3_9 python_single_target_python3_8 python_single_target_python3_7 python_single_target_python3_6 ) )
 RESTRICT=ia64? ( test ) !test? ( test ) test
 SLOT=0
-SRC_URI=mirror://gnu/gdb/gdb-11.2.tar.xz ftp://sourceware.org/pub/gdb/releases/gdb-11.2.tar.xz
+SRC_URI=mirror://gnu/gdb/gdb-13.1.tar.xz ftp://sourceware.org/pub/gdb/releases/gdb-13.1.tar.xz
 _eclasses_=eutils	fcb2aa98e1948b835b5ae66ca52868c5	flag-o-matic	b3ead43a6957a00bec2e415bd5c52d27	multilib	2477ebe553d3e4d2c606191fe6c33602	python-single-r1	674c48c926cbb44e91b656e0399d8f54	python-utils-r1	5bd4686cbe063e46fff90664cfc1a5a1	toolchain-funcs	528ab0a9e1ee02c57524ad3bede3c57e
-_md5_=fe2328b43897b7c43ed93845d6840bee
+_md5_=c69a91496db00e084ad0a328a61c5bb3
