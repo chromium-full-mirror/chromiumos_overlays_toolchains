@@ -1,0 +1,10 @@
+cross-armv7a-cros-linux-gnueabihf/binutils arm -amd64 -~amd64
+cross-armv7a-cros-linux-gnueabihf/gcc arm -amd64 -~amd64
+cross-armv7a-cros-linux-gnueabihf/linux-headers arm -amd64 -~amd64
+cross-armv7a-cros-linux-gnueabihf/glibc arm -amd64 -~amd64
+cross-armv7a-cros-linux-gnueabihf/gdb arm ~arm -amd64 -~amd64
+cross-armv7a-cros-linux-gnueabihf/libxcrypt arm ~arm -amd64 -~amd64
+cross-armv7a-cros-linux-gnueabihf/compiler-rt arm ~arm -amd64 -~amd64
+cross-armv7a-cros-linux-gnueabihf/llvm-libunwind arm ~arm -amd64 -~amd64
+cross-armv7a-cros-linux-gnueabihf/libcxx arm ~arm -amd64 -~amd64
+cross-armv7a-cros-linux-gnueabihf/go arm ~arm -amd64 -~amd64
