@@ -1,4 +1,4 @@
-BDEPEND=sys-apps/texinfo test? ( dev-util/dejagnu ) nls? ( sys-devel/gettext ) sys-devel/flex >=app-portage/elt-patches-20170815 sys-devel/gnuconfig
+BDEPEND=dev-lang/perl sys-apps/texinfo test? ( dev-util/dejagnu ) nls? ( sys-devel/gettext ) sys-devel/flex >=app-portage/elt-patches-20170815 sys-devel/gnuconfig
 DEFINED_PHASES=compile configure install postinst postrm prepare test unpack
 DEPEND=>=sys-devel/binutils-config-3
 DESCRIPTION=Tools necessary to build programs
@@ -12,4 +12,4 @@ RESTRICT=!test? ( test ) splitdebug
 SLOT=i686-cros-linux-gnu
 SRC_URI=mirror://gnu/binutils/binutils-2.41.tar.xz https://dev.gentoo.org/~dilfridge/distfiles/binutils-2.41-patches-2.tar.xz
 _eclasses_=eutils	fcb2aa98e1948b835b5ae66ca52868c5	flag-o-matic	ad475baa777c9978fa035216c8264a10	gnuconfig	24782b842d9d9de6c82fa360b97d8914	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	2477ebe553d3e4d2c606191fe6c33602	toolchain-funcs	528ab0a9e1ee02c57524ad3bede3c57e
-_md5_=365448b614ffc101b02480e12d7fa57b
+_md5_=56a6e0ff7dd02317651abcc915a4319f
