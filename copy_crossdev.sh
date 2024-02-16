@@ -23,8 +23,9 @@ for SRC in \
 do
   DEST="${PROFILE}/$(basename "${SRC}")"
   mkdir -p "${DEST}"
-  find "${SRC}" -iname 'cross-*' \
-    -exec cp -vft "${DEST}" '{}' +
+  while read -r FILE; do
+    sort "${FILE}" > "${DEST}/${FILE##*/}"
+  done < <(find "${SRC}" -iname 'cross-*' -type f)
 done
 
 # Profiles don't support the `env` feature, but they do support `bashrc` so we
