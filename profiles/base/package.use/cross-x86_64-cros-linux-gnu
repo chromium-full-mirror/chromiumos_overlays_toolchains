@@ -7,3 +7,4 @@ cross-x86_64-cros-linux-gnu/libcxx -selinux -multilib
 cross-x86_64-cros-linux-gnu/libxcrypt -selinux -multilib
 cross-x86_64-cros-linux-gnu/linux-headers -selinux -multilib
 cross-x86_64-cros-linux-gnu/llvm-libunwind -selinux -multilib
+cross-x86_64-cros-linux-gnu/rust -selinux -multilib

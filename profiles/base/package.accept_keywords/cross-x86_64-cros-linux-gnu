@@ -7,3 +7,4 @@ cross-x86_64-cros-linux-gnu/libcxx amd64
 cross-x86_64-cros-linux-gnu/libxcrypt amd64
 cross-x86_64-cros-linux-gnu/linux-headers amd64
 cross-x86_64-cros-linux-gnu/llvm-libunwind amd64
+cross-x86_64-cros-linux-gnu/rust amd64
