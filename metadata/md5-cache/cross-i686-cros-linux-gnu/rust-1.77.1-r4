@@ -1,13 +1,13 @@
-BDEPEND=sys-devel/llvm cross-armv7a-cros-linux-gnueabihf/compiler-rt cross-armv7a-cros-linux-gnueabihf/glibc cross-armv7a-cros-linux-gnueabihf/libcxx cross-armv7a-cros-linux-gnueabihf/libxcrypt cross-armv7a-cros-linux-gnueabihf/linux-headers cross-armv7a-cros-linux-gnueabihf/llvm-libunwind python_targets_python3_6? ( dev-python/dataclasses ) >=dev-vcs/git-1.8.2.1[curl] dev-vcs/git app-misc/jq dev-util/cmake dev-util/ninja
+BDEPEND=sys-devel/llvm python_targets_python3_6? ( dev-python/dataclasses ) >=dev-vcs/git-1.8.2.1[curl] dev-vcs/git app-misc/jq dev-util/cmake dev-util/ninja
 DEFINED_PHASES=compile configure info install prepare setup unpack
-DEPEND=cross-armv7a-cros-linux-gnueabihf/binutils sys-devel/llvm || ( dev-lang/python:3.8 dev-lang/python:3.9 dev-lang/python:3.10 dev-lang/python:3.11 ) >=dev-libs/libxml2-2.9.6 >=dev-lang/perl-5.0 =dev-lang/rust-host-1.77.1-r3
+DEPEND=cross-i686-cros-linux-gnu/binutils sys-devel/llvm || ( dev-lang/python:3.8 dev-lang/python:3.9 dev-lang/python:3.10 dev-lang/python:3.11 ) >=dev-libs/libxml2-2.9.6 >=dev-lang/perl-5.0 =dev-lang/rust-host-1.77.1-r4
 EAPI=7
 HOMEPAGE=https://www.rust-lang.org/
 IUSE=continue-on-patch-failure python_targets_python3_6 cros_host cros_workon_tree_fbfdaa24e61c4e41d8110a3851ddc0968bf525c6 rust_profile_frontend_generate rust_profile_llvm_generate rust_profile_frontend_use_local rust_profile_llvm_use_local +rust_profile_frontend_use +rust_profile_llvm_use rust_cros_llvm
 KEYWORDS=*
 LICENSE=|| ( MIT Apache-2.0 ) BSD-1 BSD-2 BSD-4 UoI-NCSA
 PROPERTIES=live live
-RDEPEND=!<=dev-lang/rust-1.73.0-r5 =dev-lang/rust-host-1.77.1-r3
+RDEPEND=!<=dev-lang/rust-1.73.0-r5 =dev-lang/rust-host-1.77.1-r4
 REQUIRED_USE=rust_profile_frontend_generate? ( !rust_profile_frontend_use !rust_profile_frontend_use_local !rust_profile_llvm_use !rust_profile_llvm_use_local ) rust_profile_llvm_generate? ( !rust_profile_frontend_use !rust_profile_frontend_use_local !rust_profile_llvm_use !rust_profile_llvm_use_local ) rust_profile_llvm_use? ( !rust_profile_llvm_use_local ) rust_profile_frontend_use? ( !rust_profile_frontend_use_local )
 RESTRICT=binchecks strip
 SLOT=stable/1.77
