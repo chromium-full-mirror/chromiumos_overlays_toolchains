@@ -1,0 +1,16 @@
+BDEPEND=sys-devel/llvm dev-vcs/git app-misc/jq python_targets_python3_6? ( dev-python/dataclasses ) >=dev-vcs/git-1.8.2.1[curl] dev-util/cmake dev-util/ninja
+DEFINED_PHASES=compile configure info install prepare setup unpack
+DEPEND=cross-x86_64-cros-linux-gnux32/binutils sys-devel/llvm || ( dev-lang/python:3.8 dev-lang/python:3.9 dev-lang/python:3.10 dev-lang/python:3.11 ) >=dev-libs/libxml2-2.9.6 >=dev-lang/perl-5.0 =dev-lang/rust-host-9999
+EAPI=7
+HOMEPAGE=https://www.rust-lang.org/
+IUSE=cros_host cros_workon_tree_ continue-on-patch-failure python_targets_python3_6 rust_profile_frontend_generate rust_profile_llvm_generate rust_profile_frontend_use_local rust_profile_llvm_use_local +rust_profile_frontend_use +rust_profile_llvm_use rust_cros_llvm
+KEYWORDS=~*
+LICENSE=|| ( MIT Apache-2.0 ) BSD-1 BSD-2 BSD-4 UoI-NCSA
+PROPERTIES=live live
+RDEPEND=!<=dev-lang/rust-1.73.0-r5 =dev-lang/rust-host-9999
+REQUIRED_USE=rust_profile_frontend_generate? ( !rust_profile_frontend_use !rust_profile_frontend_use_local !rust_profile_llvm_use !rust_profile_llvm_use_local ) rust_profile_llvm_generate? ( !rust_profile_frontend_use !rust_profile_frontend_use_local !rust_profile_llvm_use !rust_profile_llvm_use_local ) rust_profile_llvm_use? ( !rust_profile_llvm_use_local ) rust_profile_frontend_use? ( !rust_profile_frontend_use_local )
+RESTRICT=binchecks strip
+SLOT=stable/9999
+SRC_URI=https://static.rust-lang.org/dist/rustc-1.77.1-src.tar.gz -> rustc-1.77.1-src.tar.gz rust_profile_frontend_use? ( gs://chromeos-localmirror/distfiles/rust-pgo-1.77.1-frontend.profdata.xz ) rust_profile_llvm_use? ( gs://chromeos-localmirror/distfiles/distfiles/rust-pgo-1.77.1-llvm.profdata.xz )
+_eclasses_=cros-constants	676fcfd1679a06bba553adf90e231454	cros-credentials	9f78e8c920510c87d08fd22f8c7fe327	cros-llvm	781a49799e3d10a6e45c62b79ea36ae2	cros-rustc	44ed2d2eda1da9fcb63c82c5cf2f4efc	cros-workon	c537d6bb753778f0490969e5ae268171	flag-o-matic	ad475baa777c9978fa035216c8264a10	git-2	d6a1d7d3b4c4fff2fba86e3f53beeb0f	git-r3	c8f4649ab5a3c07ee2b75b12bc446f6a	multilib	2477ebe553d3e4d2c606191fe6c33602	python-any-r1	54a3178500786b0a7ede4a23b7f2a6ad	python-utils-r1	76252008070e69454f51fa80c07638c9	toolchain-funcs	528ab0a9e1ee02c57524ad3bede3c57e
+_md5_=e565eed8691d72160abe78843c231405
