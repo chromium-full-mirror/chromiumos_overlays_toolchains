@@ -10,5 +10,5 @@ PROPERTIES=live
 RESTRICT=binchecks strip
 SLOT=0
 SRC_URI=https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.4.tar.xz mirror://gentoo/gentoo-headers-5.4-2.tar.xz https://dev.gentoo.org/~sam/distfiles/gentoo-headers-5.4-2.tar.xz
-_eclasses_=cros-constants	676fcfd1679a06bba553adf90e231454	cros-credentials	9f78e8c920510c87d08fd22f8c7fe327	cros-workon	8ccb9289d53143864de07f73b646b085	estack	686eaab303305a908fd57b2fd7617800	flag-o-matic	ad475baa777c9978fa035216c8264a10	git-2	d6a1d7d3b4c4fff2fba86e3f53beeb0f	kernel-2	12a98c718ba8260077000c13b965ba1b	multilib	2477ebe553d3e4d2c606191fe6c33602	multiprocessing	e5d48c933105327e0f826ce5108afc55	toolchain-funcs	528ab0a9e1ee02c57524ad3bede3c57e
+_eclasses_=cros-constants	676fcfd1679a06bba553adf90e231454	cros-credentials	9f78e8c920510c87d08fd22f8c7fe327	cros-workon	08ff10905d3c9bccd747d03f4d21ac93	estack	686eaab303305a908fd57b2fd7617800	flag-o-matic	ad475baa777c9978fa035216c8264a10	git-2	d6a1d7d3b4c4fff2fba86e3f53beeb0f	kernel-2	12a98c718ba8260077000c13b965ba1b	multilib	2477ebe553d3e4d2c606191fe6c33602	multiprocessing	e5d48c933105327e0f826ce5108afc55	toolchain-funcs	528ab0a9e1ee02c57524ad3bede3c57e
 _md5_=0b981736fab2790b426b2d97f6965489
