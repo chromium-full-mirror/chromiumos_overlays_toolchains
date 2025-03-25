@@ -1,4 +1,4 @@
-BDEPEND=sys-apps/texinfo cross-arm-none-eabi/binutils cross-arm-none-eabi/gcc
+BDEPEND=sys-apps/texinfo cross-arm-none-eabi/binutils
 DEFINED_PHASES=compile configure install prepare setup
 DESCRIPTION=Newlib is a C library intended for use on embedded systems
 EAPI=7
@@ -10,4 +10,4 @@ RESTRICT=strip
 SLOT=0
 SRC_URI=ftp://sourceware.org/pub/newlib/newlib-4.1.0.tar.gz
 _eclasses_=flag-o-matic	ad475baa777c9978fa035216c8264a10	multilib	2477ebe553d3e4d2c606191fe6c33602	toolchain-funcs	528ab0a9e1ee02c57524ad3bede3c57e
-_md5_=c2b7c3ec633c061142c1f5d1db49df56
+_md5_=cb1890ed0309993b882583d0c847b033
