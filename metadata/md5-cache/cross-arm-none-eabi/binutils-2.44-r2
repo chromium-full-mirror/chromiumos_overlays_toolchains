@@ -1,4 +1,4 @@
-BDEPEND=dev-lang/perl sys-apps/texinfo test? ( dev-util/dejagnu ) nls? ( sys-devel/gettext ) sys-devel/flex >=app-portage/elt-patches-20170815 sys-devel/gnuconfig
+BDEPEND=dev-lang/perl sys-apps/texinfo test? ( dev-util/dejagnu ) nls? ( sys-devel/gettext ) sys-devel/bison sys-devel/flex >=app-portage/elt-patches-20170815 sys-devel/gnuconfig
 DEFINED_PHASES=compile configure install postinst postrm prepare test unpack
 DEPEND=>=sys-devel/binutils-config-3
 DESCRIPTION=Tools necessary to build programs
@@ -9,7 +9,7 @@ KEYWORDS=*
 LICENSE=|| ( GPL-3 LGPL-3 )
 RDEPEND=>=sys-devel/binutils-config-3
 RESTRICT=!cros_host? ( test ) !test? ( test ) splitdebug
-SLOT=i686-cros-linux-gnu
-SRC_URI=mirror://gnu/binutils/binutils-2.44.tar.xz https://dev.gentoo.org/~dilfridge/distfiles/binutils-2.44-patches-1.tar.xz
+SLOT=arm-none-eabi
+SRC_URI=mirror://gnu/binutils/binutils-2.44.tar.xz https://dev.gentoo.org/~dilfridge/distfiles/binutils-2.44-patches-4.tar.xz
 _eclasses_=eutils	fcb2aa98e1948b835b5ae66ca52868c5	flag-o-matic	ad475baa777c9978fa035216c8264a10	gnuconfig	24782b842d9d9de6c82fa360b97d8914	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	2477ebe553d3e4d2c606191fe6c33602	toolchain-funcs	528ab0a9e1ee02c57524ad3bede3c57e
-_md5_=70e69645acdc6a3b61c39f2da024c3d6
+_md5_=6aeafb69ee3b55db666f8e1dd354223d
