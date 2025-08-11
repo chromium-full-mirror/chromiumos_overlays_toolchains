@@ -1,13 +1,13 @@
-BDEPEND=sys-devel/llvm cross-x86_64-cros-linux-gnu/glibc cross-x86_64-cros-linux-gnu/libcxx cross-x86_64-cros-linux-gnu/libxcrypt cross-x86_64-cros-linux-gnu/linux-headers cross-x86_64-cros-linux-gnu/llvm-libunwind dev-vcs/git app-misc/jq >=dev-vcs/git-1.8.2.1[curl] dev-util/cmake dev-util/ninja
+BDEPEND=sys-devel/llvm cross-aarch64-cros-linux-gnu/compiler-rt cross-aarch64-cros-linux-gnu/glibc cross-aarch64-cros-linux-gnu/libcxx cross-aarch64-cros-linux-gnu/libxcrypt cross-aarch64-cros-linux-gnu/linux-headers cross-aarch64-cros-linux-gnu/llvm-libunwind dev-vcs/git app-misc/jq >=dev-vcs/git-1.8.2.1[curl] dev-util/cmake dev-util/ninja
 DEFINED_PHASES=compile configure info install prepare setup unpack
-DEPEND=cross-x86_64-cros-linux-gnu/binutils sys-devel/llvm || ( >=dev-lang/python-3.8.15_p3:3.8 >=dev-lang/python-3.9.15_p3:3.9 >=dev-lang/python-3.10.8_p3:3.10 >=dev-lang/python-3.11.0_p2:3.11 ) >=dev-libs/libxml2-2.9.6 >=dev-lang/perl-5.0 =dev-lang/rust-host-1.88.0-r22
+DEPEND=cross-aarch64-cros-linux-gnu/binutils sys-devel/llvm || ( >=dev-lang/python-3.8.15_p3:3.8 >=dev-lang/python-3.9.15_p3:3.9 >=dev-lang/python-3.10.8_p3:3.10 >=dev-lang/python-3.11.0_p2:3.11 ) >=dev-libs/libxml2-2.9.6 >=dev-lang/perl-5.0 =dev-lang/rust-host-1.88.0-r23
 EAPI=7
 HOMEPAGE=https://www.rust-lang.org/
 IUSE=cros_host cros_workon_tree_776139a53bc86333de8672a51ed7879e75909ac9 rust_profile_frontend_generate rust_profile_llvm_generate rust_profile_frontend_use_local rust_profile_llvm_use_local +rust_profile_frontend_use +rust_profile_llvm_use rust_cros_llvm
 KEYWORDS=*
 LICENSE=|| ( MIT Apache-2.0 ) BSD-1 BSD-2 BSD-4 UoI-NCSA
 PROPERTIES=live live
-RDEPEND=!<=dev-lang/rust-1.73.0-r5 =dev-lang/rust-host-1.88.0-r22
+RDEPEND=!<=dev-lang/rust-1.73.0-r5 =dev-lang/rust-host-1.88.0-r23
 REQUIRED_USE=rust_profile_frontend_generate? ( !rust_profile_frontend_use !rust_profile_frontend_use_local !rust_profile_llvm_use !rust_profile_llvm_use_local ) rust_profile_llvm_generate? ( !rust_profile_frontend_use !rust_profile_frontend_use_local !rust_profile_llvm_use !rust_profile_llvm_use_local ) rust_profile_llvm_use? ( !rust_profile_llvm_use_local ) rust_profile_frontend_use? ( !rust_profile_frontend_use_local )
 RESTRICT=binchecks strip
 SLOT=stable/1.88
